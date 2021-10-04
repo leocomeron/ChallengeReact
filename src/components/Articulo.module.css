@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'SuecaSlab';
+    src: local("SuecaSlab"), url("../../src/fonts/suecaslab-medium.ttf") format("truetype");
+}
+
+.url {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.volanta {
+    display: inline;
+    color: #0074C4
+}
+
+.titulo {
+    display: inline
+}
+
+.marquesina {
+    display: inline
+}
+
+.nombreAutor {
+    display: inline
+}
+
+.container {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+/* CONFIGURACIÓN PARA 3 RESOLUCIONES: */
+
+@media only screen and (max-width: 1920px) {
+    .imagenNota {
+        display: inline-flexbox;
+        width: 100%;
+        max-height: 100%;
+    }
+    .volanta_titulo {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 46.43%;
+        /* Global/XL - Bold */
+        font-family: SuecaSlab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 125% */
+        letter-spacing: -0.4px;
+        /* light/neutral/900 */
+        color: #1C1C1F;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .bajada {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 57.14%;
+        bottom: 10.71%;
+        /* Arial/2XS - Regular */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 150% */
+        /* light/neutral/700 */
+        color: #333333;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .marquesina_autor {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        /* Arial/4XS - Bold */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        /* identical to box height, or 114% */
+        /* light/neutral/800 */
+        color: #272727;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 10px 0px;
+    }
+    .imagenAutor {
+        /* Auto Layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: static;
+        width: 5rem;
+        height: 5rem;
+        left: 1.5rem;
+        top: 0px;
+        /* light/neutral/400 */
+        background: #CCCCCC;
+        /* neutral/white */
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 200px;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0.5rem 0rem;
+    }
+    .imgContainer {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .imagenNota {
+        display: none;
+        width: 100%;
+        max-height: 100%;
+    }
+    .volanta_titulo {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 46.43%;
+        /* Global/XL - Bold */
+        font-family: SuecaSlab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 125% */
+        letter-spacing: -0.4px;
+        /* light/neutral/900 */
+        color: #1C1C1F;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .bajada {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 57.14%;
+        bottom: 10.71%;
+        /* Arial/2XS - Regular */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 150% */
+        /* light/neutral/700 */
+        color: #333333;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .marquesina_autor {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        /* Arial/4XS - Bold */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        /* identical to box height, or 114% */
+        /* light/neutral/800 */
+        color: #272727;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 10px 0px;
+    }
+    .imagenAutor {
+        /* Auto Layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: static;
+        width: 5rem;
+        height: 5rem;
+        left: 1.5rem;
+        top: 0rem;
+        /* light/neutral/400 */
+        background: #CCCCCC;
+        /* neutral/white */
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 200px;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0.5rem 0rem;
+    }
+    .imgContainer {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        margin: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: solid #CCCCCC 2px;
+        text-align: center;
+    }
+    .imagenNota {
+        display: none;
+        width: 100%;
+        max-height: 100%;
+        max-height: 373px
+    }
+    .volanta_titulo {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 46.43%;
+        /* Global/XL - Bold */
+        font-family: SuecaSlab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 125% */
+        letter-spacing: -0.4px;
+        /* light/neutral/900 */
+        color: #1C1C1F;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .bajada {
+        display: none;
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 57.14%;
+        bottom: 10.71%;
+        /* Arial/2XS - Regular */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* or 150% */
+        /* light/neutral/700 */
+        color: #333333;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .marquesina_autor {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        /* Arial/4XS - Bold */
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        /* identical to box height, or 114% */
+        /* light/neutral/800 */
+        color: #272727;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 10px 0px;
+    }
+    .imagenAutor {
+        /* Auto Layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: static;
+        width: 5rem;
+        height: 5rem;
+        left: 1.5rem;
+        top: 0rem;
+        /* light/neutral/400 */
+        background: #CCCCCC;
+        /* neutral/white */
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 200px;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

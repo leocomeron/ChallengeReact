@@ -1,0 +1,67 @@
+/* SETEO GENERAL (incluye dispositivos pequeños) */
+
+.row {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: white;
+    display: block
+}
+
+.col8 {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: block;
+    padding-left: 1rem;
+}
+
+.col4 {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: block;
+    padding-left: 1rem;
+}
+
+.col6 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    display: block;
+    padding-left: 1rem;
+}
+
+/* SÓLO PARA PANTALA GRANDE: */
+
+@media (min-width: 768px) {
+    .col4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col8 {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        padding-right: 1.5rem;
+        border-right: solid rgb(201, 197, 197) 2px;
+    }
+    .col6 {
+        display: inline-flex;
+        margin-top: 2%;
+        padding-right: 2%;
+    }
+    .row {
+        border-bottom: 1px solid #ccc;
+    }
+    section {
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+}
