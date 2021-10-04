@@ -2,7 +2,7 @@
 import classes from '../components/Articulo.module.css'
 import Card from './ui/Card'
 
-function Item(props) {
+function Articulo(props) {
     return (
         <Card>
             <div className={classes.container}>
@@ -31,4 +31,4 @@ function Item(props) {
     )
 }
 
-export default Item
+export default Articulo
