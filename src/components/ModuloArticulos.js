@@ -7,11 +7,11 @@ function ModuloArticulos() {
         <section>
             <div className={classes.row}>
                 <div className={classes.col8}>
-                    <ArticulosDisponibles />
-                    <ArticulosDisponibles />
+                    <ArticulosDisponibles /> {/* DEBERIA EVALUAR SOLO 1ER OBJETO/ARTÍCULO */}
+                    <ArticulosDisponibles /> {/* DEBERIA EVALUAR SOLO 2DO OBJETO/ARTÍCULO */}
                 </div>
                 <div className={classes.col4}>
-                    <ArticulosDisponibles />
+                    <ArticulosDisponibles /> {/* DEBERIA EVALUAR SOLO 3ER OBJETO/ARTÍCULO, y así sucesivamente. */}
                     <ArticulosDisponibles />
                 </div>
             </div>
