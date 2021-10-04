@@ -2,7 +2,6 @@ import Articulo from './Articulo'
 import DUMMY_DATA from '../data/allData'
 
 function ArticulosDisponibles() {
-
     const articles = DUMMY_DATA.map((article) => (
         <Articulo
             key={article.id}
@@ -15,8 +14,7 @@ function ArticulosDisponibles() {
             imagenAutor={article.imagenAutor}
             url={article.url}
         />
-    ))
-    console.log(articles)
+    ));
     return (
         <div>{articles}</div>
     )

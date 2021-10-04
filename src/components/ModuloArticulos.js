@@ -2,7 +2,6 @@ import ArticulosDisponibles from './ArticulosDisponibles'
 import classes from './ModuloArticulos.module.css'
 
 function ModuloArticulos() {
-
     return (
         <section>
             <div className={classes.row}>

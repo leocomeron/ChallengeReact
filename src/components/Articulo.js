@@ -3,7 +3,6 @@ import classes from '../components/Articulo.module.css'
 import Card from './ui/Card'
 
 function Item(props) {
-
     return (
         <Card>
             <div className={classes.container}>

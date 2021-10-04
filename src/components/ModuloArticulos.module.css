@@ -37,7 +37,7 @@ section {
     padding-left: 1rem;
 }
 
-/* SÓLO PARA PANTALA GRANDE: */
+/* SÓLO PARA PANTALLA GRANDE: */
 
 @media (min-width: 768px) {
     .col4 {
